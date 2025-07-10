@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Learning Dashboard | LearnHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Learn<span>Hub</span></h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="dashboard.html" class="active">My Learning</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="assets/user-avatar.jpg" alt="User Avatar">
+                <span>John Doe</span>
+                <i class="fas fa-chevron-down"></i>
+                <div class="dropdown-menu">
+                    <a href="#"><i class="fas fa-user"></i> My Profile</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="container">
+            <div class="dashboard-sidebar">
+                <div class="sidebar-menu">
+                    <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+                    <a href="#"><i class="fas fa-book-open"></i> My Courses</a>
+                    <a href="#"><i class="fas fa-chart-line"></i> Progress</a>
+                    <a href="#"><i class="fas fa-certificate"></i> Certificates</a>
+                    <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                </div>
+                <div class="sidebar-progress">
+                    <h3>Learning Stats</h3>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Courses Completed</span>
+                            <span>5/12</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 42%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Hours Learned</span>
+                            <span>48/100</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 48%;"></div>
+                        </div>
+                    </div>
+                    <div class="progress-item">
+                        <div class="progress-info">
+                            <span>Daily Goal</span>
+                            <span>1.2/2 hours</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="dashboard-content">
+                <div class="welcome-banner">
+                    <div class="welcome-text">
+                        <h1>Welcome back, John!</h1>
+                        <p>Continue your learning journey. You're making great progress!</p>
+                        <button class="btn btn-primary">Continue Learning</button>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="assets/dashboard-hero.png" alt="Keep Learning">
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Continue Learning</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="courses-grid">
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="assets/course1.jpg" alt="Course">
+                                <div class="progress-circle" data-progress="65">
+                                    <svg class="progress-ring" width="60" height="60">
+                                        <circle class="progress-ring-circle" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                                    </svg>
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                            <div class="course-info">
+                                <h3>Complete Web Development Bootcamp</h3>
+                                <p class="instructor">Alex Johnson</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-play-circle"></i> 12/28 lessons</span>
+                                    <span><i class="fas fa-clock"></i> 8.5/22 hours</span>
+                                </div>
+                                <button class="btn btn-continue">Continue</button>
+                            </div>
+                        </div>
+                        
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="assets/course2.jpg" alt="Course">
+                                <div class="progress-circle" data-progress="32">
+                                    <svg class="progress-ring" width="60" height="60">
+                                        <circle class="progress-ring-circle" stroke-width="4" fill="transparent" r="26" cx="30" cy="30"/>
+                                    </svg>
+                                    <span>32%</span>
+                                </div>
+                            </div>
+                            <div class="course-info">
+                                <h3>JavaScript: The Advanced Concepts</h3>
+                                <p class="instructor">Sarah Miller</p>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-play-circle"></i> 6/19 lessons</span>
+                                    <span><i class="fas fa-clock"></i> 4/12.5 hours</span>
+                                </div>
+                                <button class="btn btn-continue">Continue</button>
+                            </div>
+                        </div>
+                        
+                        <!-- More courses -->
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recently Completed</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="completed-courses">
+                        <div class="completed-course">
+                            <img src="assets/course3.jpg" alt="Course">
+                            <div class="course-details">
+                                <h3>CSS Masterclass</h3>
+                                <p class="instructor">Michael Brown</p>
+                                <div class="completion-info">
+                                    <span class="badge">Completed</span>
+                                    <span class="date">Completed on June 15, 2023</span>
+                                </div>
+                                <button class="btn btn-view-cert">View Certificate</button>
+                            </div>
+                        </div>
+                        
+                        <!-- More completed courses -->
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Learning Statistics</h2>
+                        <div class="time-filter">
+                            <button class="btn-filter active">Weekly</button>
+                            <button class="btn-filter">Monthly</button>
+                            <button class="btn-filter">Yearly</button>
+                        </div>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stats-chart">
+                            <canvas id="learningChart"></canvas>
+                        </div>
+                        <div class="stats-summary">
+                            <div class="stat-card">
+                                <i class="fas fa-book-open"></i>
+                                <div>
+                                    <h3>12</h3>
+                                    <p>Courses Enrolled</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <h3>5</h3>
+                                    <p>Courses Completed</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h3>48</h3>
+                                    <p>Hours Learned</p>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-certificate"></i>
+                                <div>
+                                    <h3>3</h3>
+                                    <p>Certificates Earned</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recommended For You</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <div class="courses-grid">
+                        <!-- Recommended courses -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
